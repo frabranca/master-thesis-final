@@ -4,9 +4,9 @@ This repository contains the work that I conducted for my master thesis on spiki
 My project consisted in:
 
 - Preliminary experiments with the Synsense speck device (see [here](https://github.com/frabranca/master-thesis-preliminary)).
-- Training of spiking neural networks with ReLU activation functions and converting trained network to spiking using sinabs modules `IAFSqueeze`.
-- Testing the converted network and assessing the performance of different architectures (`performance_analysis`).
+- Training of spiking neural networks with ReLU activation functions and converting trained network to spiking using [sinabs](https://sinabs.readthedocs.io/en/v2.0.0/) modules `IAFSqueeze`.
+- Testing the converted network and assessing the performance of different architectures (`performance_analysis/`).
 - Re-training network with additional term in the loss function to minimize the number of synaptic operations (`train_synops.py`, `synops_loss.py`, `synops_analysis.py`).
-- Implementations on the speck2e using samna (`speck2e_tests`).
+- Implementations on the speck2e using [samna](https://synsense-sys-int.gitlab.io/samna/) (`speck2e_tests/`).
 
 
