@@ -1,6 +1,7 @@
 # Master Thesis: Optical Flow Determination using Integrate & Fire Neurons
+**Disclaimer**: some of the scripts are omitted, because they have been forked from a private TU Delft repository (mainly the folders `configs`, `utils`, `models`, `dataloader` and `loss`). 
+For this reason, this repository cannot be used directly but serves to demonstrate the work that has been carried out.
 
-This repository contains the work that I conducted for my master thesis on spiking neural networks. Some of the scripts is omitted, because they have been forked from a private TU Delft repository (mainly the folders `configs`, `utils`, `models`, `dataloader` and `loss`). 
 My project consisted in:
 
 - Preliminary experiments with the Synsense speck device (see [here](https://github.com/frabranca/master-thesis-preliminary)).
