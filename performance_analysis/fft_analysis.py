@@ -1,6 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+fft_analysis.py
+
+- This script is used to analyse the noise in the network outputs.
+- By doing the FFT of the signals, the ratio between useful signal and noise can be calculated.
+- It is observed that Integrate-and-Fire (IF) neurons have a higher SNR than Leak-Integrate-and-Fire (LIF).
+- Additionally, 2 types of recurrency are tested (here addressed as type A and type B).
+
+"""
+
 gt_signal = np.loadtxt('results_inference/1f5735184f0a47abb20b0409c515b4c1/results/eval_16/2_8/gt_target_vectors.txt')
 
 # RNN-3-A, LIF-3-A

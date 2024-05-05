@@ -19,6 +19,14 @@ from utils.visualization import Visualization
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+monitor_layers.py
+
+- This script is used to monitor the activity inside the channels of the layers.
+- This is used to inspect what features every layer is learning and understand the learning process.
+
+"""
+
 features = []
 
 def read_features_snn(module, input, output):

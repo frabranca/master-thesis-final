@@ -18,6 +18,16 @@ from utils.mlflow import log_config, log_results
 from utils.visualization import Visualization
 from synops_loss import calculate_synops
 
+"""
+eval_flow.py
+
+- This script is used to assess the performance of trained models on unseen data.
+- Metrics:
+    - AEE: Average Endpoint Error
+    - RSAT: Ratio of Squared Average Timestamps
+
+"""
+
 def test(args, config_parser):
     mlflow.set_tracking_uri(args.path_mlflow)
 

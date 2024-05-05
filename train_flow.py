@@ -16,6 +16,14 @@ from sinabs.layers import StatefulLayer
 import sinabs
 from synops_loss import calculate_synops
 
+"""
+train_flow.py
+
+- This code is train the network and make it learn optical flow.
+- The loss functions used are contrast maximization and flow smoothing.
+
+"""
+
 
 def train(args, config_parser):
     mlflow.set_tracking_uri(args.path_mlflow)

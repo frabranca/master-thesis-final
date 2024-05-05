@@ -41,6 +41,14 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from sinabs import SNNAnalyzer
 
+"""
+synops_analysis.py
+
+- This code is used to analyze the number of synops per layer in the model.
+- An input sequence of events is entered and the total number of spikes at every times steps are calculated.   
+
+"""
+
 synops = []
 
 def feature_analysis(args, config_parser):
