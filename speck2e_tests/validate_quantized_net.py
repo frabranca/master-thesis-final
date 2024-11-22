@@ -34,22 +34,6 @@ with torch.no_grad():
         events.append([sum_input, sum0])
         max_spike.append([max0])  
 
-        # if visualize_features and sum1 > 1:
-        #     plt.figure(figsize=(20, 10))
-        #     for i in range(8):
-        #         plt.subplot(2, 8, i+1)
-        #         plt.imshow(model_quantized.states[1].squeeze(dim=0)[i], cmap='hot')
-        #         plt.xlabel('Time [ms]')
-        #         plt.ylabel('Potential')
-        #         plt.title(f'Feature {i+1} '+str(frame_num))
-        #         plt.subplot(2, 8, i+9)
-        #         plt.imshow(model_quantized.encoder_unet.encoders[1].recurrent_block.activation_rec.v_mem.squeeze(dim=0)[i], cmap='hot')
-        #         plt.xlabel('Time [ms]')
-        #         plt.ylabel('Potential')
-        #         plt.title(f'Feature {i+1}')
-        #     plt.tight_layout()
-        #     plt.show()
-
 time = torch.arange(0, len(events)*5, 5)
 events = torch.tensor(events)
 
